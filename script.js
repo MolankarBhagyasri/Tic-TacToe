@@ -12,14 +12,14 @@ function startGame()
     }
     document.Winner  = null;
     setMessage(  "let's get to  Start 👍🏻.");
-    document.getElementById("s1").style.color = "#BDB76B";
-    document.getElementById("s2").style.color = "#BDB76B ";
-    document.getElementById("s3").style.color = "#BDB76B ";
-    document.getElementById("s4").style.color = "#BDB76B ";
-    document.getElementById("s6").style.color = "#BDB76B ";
-    document.getElementById("s7").style.color = "#BDB76B ";
-    document.getElementById("s8").style.color = "#BDB76B ";
-    document.getElementById("s9").style.color = "#BDB76B ";
+    document.getElementById("s1");
+    document.getElementById("s2");
+    document.getElementById("s3");
+    document.getElementById("s4");
+    document.getElementById("s6");
+    document.getElementById("s7");
+    document.getElementById("s8");
+    document.getElementById("s9");
 }
 
 function setMessage(msg) 
@@ -28,13 +28,13 @@ function setMessage(msg)
 }
 function nextMove(Square)
 {
-    if(document.Winner != null)
+    if(document.Winner !== null)
     {
         setMessage(document.Winner + "Already Won the Game!");
 
     }
 
-    else if(Square.textContent == "")
+    else if(Square.textContent === "")
     {
         Square.textContent = document.turn;
         SwitchTurn();
@@ -48,7 +48,7 @@ function SwitchTurn()
 {
     if(checkforWinner(document.turn))
     {
-         setMessage("Congratulations " + document.turn + "! You Win 😄!");
+         setMessage("Congratulations " + document.turn + "! You Win 😄");
           document.Winner = document.turn;
     }
     else 
@@ -56,7 +56,7 @@ function SwitchTurn()
     {
         setMessage("Its a TIE..!! Play again...!!!");
     }
-    else if (document.turn == "X")
+    else if (document.turn === "X")
     {
         document.turn = "O";
         setMessage("It's " + document.turn + "'s turn!");
@@ -84,7 +84,7 @@ function checkforWinner(move)
 function checkRow(a,b,c, move)
 {
     var result = false;
-    if (getBox(a)== move && getBox(b)== move && getBox(c)== move)
+    if (getBox(a) === move && getBox(b) === move && getBox(c) === move)
     {
     	result = true;
     }
@@ -106,7 +106,7 @@ function CheckforTie()
     for(var i = 1; i < 10; i++)
 	{
 
-  		if(getBox(i) == "")
+  		if(getBox(i) === "")
    		  return false;
 	}    
           return true;

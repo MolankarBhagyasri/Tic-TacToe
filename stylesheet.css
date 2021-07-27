@@ -26,6 +26,10 @@ table
     font-family: 'Brush Script MT', cursive;
   
 }
+.Square
+{
+    background-color:cornsilk;
+}
 td
 {
     width: 100px;
