@@ -20,7 +20,9 @@ table
 {
     margin: 20px auto;
     border-radius: 20px;
-    color: rgb(231, 221, 229);
+    color:#020202;
+    box-sizing: border-box;
+    border-color:rgb(105, 92, 92);
     font-family: 'Brush Script MT', cursive;
   
 }
@@ -28,7 +30,7 @@ td
 {
     width: 100px;
     height: 100px;
-    background: rgb(105, 92, 92);
+    background:cornsilk;
     font-size: 60px;
     text-align: center;
     border-radius: 10px;
@@ -44,7 +46,7 @@ table tr td:hover
 }
 .but
 {
-    background: #020202;
+    background:rgb(105, 92, 92);;
     font-size: 20px;
     border-radius: 10px;
     margin-top: 50px;
