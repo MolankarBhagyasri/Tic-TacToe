@@ -30,6 +30,9 @@ table
 .Square
 {
     background-color:cornsilk;
+    box-sizing:inherit;
+    height: 50px;
+
 }
 td
 {
